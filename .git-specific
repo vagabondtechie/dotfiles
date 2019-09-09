@@ -13,3 +13,6 @@ alias gs="git show"
 alias gsf="git show --name-only"
 alias gl="git log"
 alias gll="git log -1"
+alias grbc="git rebase --continue"
+alias gcpc="git cherry-pick --continue"
+
