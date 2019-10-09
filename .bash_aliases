@@ -1,6 +1,6 @@
 alias x="exit"
-alias l="ls -l"
-alias la="ls -la"
+alias l="ls -l--color=auto"
+alias la="ls -la --color=auto"
 
 # cd shortcuts
 alias cd1="cd .."
