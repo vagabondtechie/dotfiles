@@ -1,5 +1,5 @@
 alias x="exit"
-alias l="ls -l--color=auto"
+alias l="ls -l --color=auto"
 alias la="ls -la --color=auto"
 
 # cd shortcuts
