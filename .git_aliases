@@ -1,3 +1,8 @@
+# The key idea that I have followed here is to create aliases to save on
+# key strokes. If there are multiple git commands that start with the
+# letter (ex. git commit, git checkout, git cherry-pick), use gc (or
+# the first letter of the command) for the command that you most
+# frequently use. This will save you the most key strokes.
 
 alias gst="git status"
 alias gsh="git stash"
@@ -5,6 +10,9 @@ alias gshs="git stash save"
 alias gshp="git stash pop"
 alias gpl="git pull --rebase origin master"
 alias ga="git add -A"
+alias gc="git commit"
+alias gca="git commit --amend"
+alias gcn="git commit --amend --no-edit"
 alias gac="git add -A && git commit"
 alias gaca="git add -A && git commit --amend"
 alias gacn="git add -A && git commit --amend --no-edit"
