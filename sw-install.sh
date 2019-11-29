@@ -10,5 +10,5 @@ sudo apt-get install libreoffice vlc firefox
 cp .bash_aliases ~/
 cp .git_aliases ~/
 cp .vimrc ~/
-echo -e '\nsource ~/.bash_aliases' >> ~/.bashrc
-echo -e '\nsource ~/.git_aliases' >> ~/.bashrc
+cat .bashrc_partial >> ~/.bashrc
+
