@@ -14,6 +14,7 @@ https://medium.com/@qjli/daily-dev-tips-96-visual-studio-code-how-to-enable-this
 6) Auto Rename Tag
 7) Live Server
 8) Code Runner - Jun Han
+9) Path Intellisense
 
 ### Angular Specific
 1) Angular Snippets (Version 8) - John Papa
