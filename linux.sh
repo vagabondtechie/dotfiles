@@ -7,8 +7,3 @@ sudo apt-get install unace rar unrar p7zip-rar p7zip sharutils uudeview mpack ar
 # General purpose software
 sudo apt-get install libreoffice vlc firefox
 
-cp .bash_aliases ~/
-cp .git_aliases ~/
-cp .vimrc ~/
-cat .bashrc_partial >> ~/.bashrc
-
