@@ -34,6 +34,6 @@ export PS1=$PS1_MINIMAL
 
 source ~/.bash_aliases
 source ~/.git_aliases
+source ~/.env_vars
 source ~/.dev_paths
 source ~/.sw_paths
-
