@@ -1,7 +1,9 @@
 cp .bash_aliases ~/
 cp .git_aliases ~/
-cp .dev_paths ~/
-cp .sw_paths ~/
+cp .path_vars ~/
+cp .env_vars ~/
 cp .vimrc ~/
+cp todos.txt ~/
+cp quick_notes.txt ~/
 cat .bashrc_partial >> ~/.bashrc
 

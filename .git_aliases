@@ -31,4 +31,4 @@ alias gco="git checkout"
 alias gcob="git checkout -b"
 alias gr="git reset"
 alias grh="git reset --hard"
-
+alias gcl="git clone"

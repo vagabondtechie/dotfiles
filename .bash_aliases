@@ -1,4 +1,5 @@
 alias x="exit"
+alias h="cd ~"
 alias l="ls -l"
 alias la="ls -la"
 alias c="clear && printf '\e[3J'"
@@ -20,4 +21,9 @@ alias find='grep --color=auto -in'
 alias rd='rmdir'
 alias ren='mv'
 alias md='mkdir'
+
+# Misc shortcuts
+alias td='vi ~/todos.txt'
+alias qn='vi ~/quick_notes.txt'
+alias sbp='source ~/.bash_profile'
 
