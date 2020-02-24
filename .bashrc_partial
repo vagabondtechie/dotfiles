@@ -32,6 +32,16 @@ PS1_MINIMAL="\[\e[1;36m\]->\[\e[0;33m\] "
 
 export PS1=$PS1_MINIMAL
 
+# Shell options related to accessiblity and history
+HISTFILESIZE=100000
+HISTSIZE=100000
+PROMPT_COMMAND='history -a'
+HISTCONTROL=ignoredups
+
+shopt -s histappend
+shopt -s cmdhist
+shopt -s cdspell
+
 source ~/.bash_aliases
 source ~/.git_aliases
 source ~/.env_vars
