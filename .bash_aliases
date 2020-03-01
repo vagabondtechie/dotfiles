@@ -25,5 +25,7 @@ alias md='mkdir'
 # Misc shortcuts
 alias td='vi ~/todos.txt'
 alias qn='vi ~/quick_notes.txt'
+alias bl='vi ~/bucket_list.txt'
 alias sbp='source ~/.bash_profile'
+alias edbp="vi ~/.bash_profile'
 
