@@ -19,3 +19,9 @@ nnoremap <Leader>s :w<CR>
 nnoremap <Leader>x :wq<CR>
 nnoremap <Leader>q :q!<CR>
 
+" Setting the arrow keys to no-ops
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+
