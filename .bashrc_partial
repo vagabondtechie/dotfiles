@@ -9,8 +9,8 @@ git_info() {
    /Changes not staged for commit/ { modified = 1 }
    END {
      if (added) printf "on \033[1;93m%s [+]", branch
-     else if (modified) printf "on \033[1;91m%s [*]", branch
-     else if (branch != "") printf "on \033[1;92m%s", branch
+     else if (modified) printf "on \033[1;91m%s [✘]", branch
+     else if (branch != "") printf "on \033[1;92m%s [✔]", branch
      else printf ""
    }
    '

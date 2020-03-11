@@ -10,6 +10,10 @@ set expandtab
 set relativenumber
 set autoindent
 set nocompatible
+
+" Search related config
+set ignorecase
+set smartcase
 set hlsearch
 set incsearch
 
@@ -18,6 +22,7 @@ set mapleader=","
 nnoremap <Leader>s :w<CR>
 nnoremap <Leader>x :wq<CR>
 nnoremap <Leader>q :q!<CR>
+nnoremap <Leader>f :FZF<CR>
 
 " Setting the arrow keys to no-ops
 noremap <Up> <Nop>
@@ -25,3 +30,7 @@ noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 
+" Syntax and color
+syntax on
+colorscheme darkblue
+set rtp+=~/.fzf
