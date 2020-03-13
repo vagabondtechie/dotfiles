@@ -11,17 +11,6 @@ alias cd3="cd ../../../"
 alias cd4="cd ../../../../"
 alias cd5="cd ../../../../../"
 
-# Windows aliases
-alias cls="clear && printf '\e[3J'"
-alias dir='ls -l'
-alias del='rm'
-alias deltree='rm -Rf'
-alias edit='nano'
-alias find='grep --color=auto -in'
-alias rd='rmdir'
-alias ren='mv'
-alias md='mkdir'
-
 # Misc shortcuts
 alias td='vi ~/todos.txt'
 alias qn='vi ~/quick_notes.txt'

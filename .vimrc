@@ -18,7 +18,7 @@ set hlsearch
 set incsearch
 
 " Setting Leader Key and key remaps
-set mapleader=","
+let mapleader=","
 nnoremap <Leader>s :w<CR>
 nnoremap <Leader>x :wq<CR>
 nnoremap <Leader>q :q!<CR>
