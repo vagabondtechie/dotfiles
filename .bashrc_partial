@@ -45,5 +45,4 @@ shopt -s cdspell
 source ~/.bash_aliases
 source ~/.git_aliases
 source ~/.env_vars
-source ~/.dev_paths
-source ~/.sw_paths
+source ~/.path_vars
