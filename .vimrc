@@ -39,3 +39,9 @@ syntax on
 set splitbelow
 set splitright
 
+" Make it obvious where 80 characters is
+set textwidth=80
+set colorcolumn=+1
+
+" Show the cursor line highlighted all the time
+set ruler
