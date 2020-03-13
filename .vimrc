@@ -32,5 +32,10 @@ nnoremap <Down> :echoe "Use j"<CR>
 
 " Syntax and color
 syntax on
-colorscheme darkblue
-set rtp+=~/.fzf
+" colorscheme darkblue
+" set rtp+=~/.fzf
+
+" Open new split panes to right and bottom, which feels more natural
+set splitbelow
+set splitright
+
