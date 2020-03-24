@@ -1,4 +1,5 @@
 " Basic config
+set nocompatible
 set backspace=eol,start,indent
 set nobackup
 set nowb
@@ -9,7 +10,6 @@ set shiftwidth=4
 set expandtab
 set relativenumber
 set autoindent
-set nocompatible
 
 " Search related config
 set ignorecase
@@ -18,7 +18,7 @@ set hlsearch
 set incsearch
 
 " Setting Leader Key and key remaps
-let mapleader=","
+let mapleader=" "
 nnoremap <Leader>s :w<CR>
 nnoremap <Leader>x :wq<CR>
 nnoremap <Leader>q :q!<CR>
@@ -40,8 +40,9 @@ set splitbelow
 set splitright
 
 " Make it obvious where 80 characters is
-set textwidth=80
+set textwidth=120
 set colorcolumn=+1
 
 " Show the cursor line highlighted all the time
-set ruler
+set cursorline
+highlight CursorLine cterm=None ctermbg=darkblue ctermfg=white
