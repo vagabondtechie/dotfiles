@@ -1,4 +1,5 @@
 cp .bash_aliases ~/
+cp .bash_functions ~/
 cp .git_aliases ~/
 cp .path_vars ~/
 cp .env_vars ~/

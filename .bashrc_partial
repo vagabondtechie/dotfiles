@@ -1,31 +1,9 @@
+[ -f ~/.bash_aliases ] && source ~/.bash_aliases
+[ -f ~/.bash_functions ] && source ~/.bash_functions
+[ -f ~/.git_aliases ] && source ~/.git_aliases
+[ -f ~/.env_vars ] && source ~/.env_vars
+[ -f ~/.path_vars ] && source ~/.path_vars
 
-git_info() {
-   git status 2> /dev/null | awk '
-   BEGIN {
-     modified=0; added=0; branch=""
-   }
-   /On branch/ { branch = $3; }
-   /Changes to be committed/ { added=1 }
-   /Changes not staged for commit/ { modified = 1 }
-   END {
-     if (added) printf "on \033[1;93m%s [+]", branch
-     else if (modified) printf "on \033[1;91m%s [✘]", branch
-     else if (branch != "") printf "on \033[1;92m%s [✔]", branch
-     else printf ""
-   }
-   '
-}
-setps1() {
-    if [ $1 == "G" ]
-    then
-        PS1=$PS1_WITH_GIT_INFO
-    elif [ $1 == "E" ]
-    then
-        PS1=$PS1_IN_PLAIN_ENGLISH
-    else
-        PS1=$PS1_MINIMAL
-    fi
-}
 PS1_WITH_GIT_INFO="\[\e[1;36m\]\w\[\e[0m\] \$(git_info)\[\e[0m\]\n\[\e[1;37m\]|>\[\033[0;33m\] "
 PS1_IN_PLAIN_ENGLISH="\[\e[36m\]You are here: (\w)\n\[\e[1;31m\]|>\[\e[1;33m\]|>\[\e[1;32m\]|>\[\e[0;33m\] "
 PS1_MINIMAL="\[\e[1;36m\]->\[\e[0;33m\] "
@@ -42,7 +20,3 @@ shopt -s histappend
 shopt -s cmdhist
 shopt -s cdspell
 
-source ~/.bash_aliases
-source ~/.git_aliases
-source ~/.env_vars
-source ~/.path_vars
