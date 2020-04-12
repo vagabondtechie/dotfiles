@@ -1,3 +1,9 @@
+#/bin/bash
+
+# Install starship bash prompt
+curl -fsSL https://starship.rs/install.sh | bash
+echo 'eval "$(starship init bash)"' >> ~/.bashrc
+
 # Development software
 sudo apt-get install python3-pip python-pip virtualenv git openssh-server openssh-client g++ gcc
 

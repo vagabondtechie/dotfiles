@@ -1,3 +1,4 @@
+#!/bin/bash
 # Link the config files to HOME directory counterparts
 ln -s $(pwd)/.bash_aliases $HOME/
 ln -s $(pwd)/.bash_functions $HOME/
@@ -12,8 +13,10 @@ ln -s $(pwd)/.vimrc $HOME/
 [ -f ~/bucket_list.txt ] || cp bucket_list.txt ~/
 
 if [ "$1" == "mac" ]; then
+    bash mac.sh
     cat .bash_cfg_partial >> ~/.bash_profile
 elif [ "$1" == "linux" ]; then
+    bash linux.sh
     cat .bash_cfg_partial >> ~/.bashrc
 else
     echo "Which os is this?"
