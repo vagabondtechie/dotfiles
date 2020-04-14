@@ -1,7 +1,10 @@
 alias x="exit"
 alias h="cd ~"
 alias l="ls -l"
-alias la="ls -la"
+alias la="ls -lA"
+alias lad="ls -lA | grep '^d'"
+alias laf="ls -lA | grep '^-'"
+alias lal="ls -lA | grep '^l'"
 alias c="clear && printf '\e[3J'"
 
 # cd shortcuts
