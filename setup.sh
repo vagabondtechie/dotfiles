@@ -13,11 +13,11 @@ ln -s $(pwd)/.vimrc $HOME/
 [ -f ~/bucket_list.txt ] || cp bucket_list.txt ~/
 
 if [ "$1" == "mac" ]; then
-    bash mac.sh
     cat .bash_cfg_partial >> ~/.bash_profile
+    bash mac.sh
 elif [ "$1" == "linux" ]; then
-    bash linux.sh
     cat .bash_cfg_partial >> ~/.bashrc
+    bash linux.sh
 else
     echo "Which os is this?"
 fi

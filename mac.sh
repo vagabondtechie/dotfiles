@@ -6,3 +6,6 @@
 # Install starship bash prompt
 brew install starship
 echo 'eval "$(starship init bash)"' >> ~/.bash_profile
+
+# Install ctags
+brew install ctags
