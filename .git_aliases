@@ -5,6 +5,7 @@
 # frequently use. This will save you the most key strokes.
 
 alias gs="git status"
+alias gss="git status -s -b"
 
 alias gd="git diff"
 alias gdl="git diff HEAD^ HEAD"
@@ -30,6 +31,7 @@ alias gshs="git stash save"
 alias gshp="git stash pop"
 alias gshu="git stash --include-untracked"
 alias gsha="git stash apply"
+alias gshl="git stash list"
 
 alias gsw="git show"
 alias gswf="git show --name-only"
@@ -50,3 +52,7 @@ alias gr="git reset"
 alias grh="git reset --hard"
 
 alias gcl="git clone"
+
+alias gf="git fetch"
+alias gfa="git fetch --all"
+
