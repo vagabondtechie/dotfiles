@@ -20,15 +20,15 @@ set incsearch
 " Setting Leader Key and key remaps
 let mapleader=" "
 nnoremap <Leader>s :w<CR>
-nnoremap <Leader>x :wq<CR>
+nnoremap <Leader>x :x<CR>
 nnoremap <Leader>q :q!<CR>
 nnoremap <Leader>f :FZF<CR>
 
-" Setting the arrow keys to no-ops
-nnoremap <Left> :echoe "Use h"<CR>
-nnoremap <Right> :echoe "Use l"<CR>
-nnoremap <Up> :echoe "Use k"<CR>
-nnoremap <Down> :echoe "Use j"<CR>
+" Setting the arrow keys to move around windows in a split-window environment
+nnoremap <Left> <C-w><Left>
+nnoremap <Right> <C-w><Right>
+nnoremap <Up> <C-w><Up>
+nnoremap <Down> <C-w><Down>
 
 " Syntax and color
 syntax on
