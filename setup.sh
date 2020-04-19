@@ -13,9 +13,11 @@ ln -s $(pwd)/.vimrc $HOME/
 [ -f ~/bucket_list.txt ] || cp bucket_list.txt ~/
 
 if [ "$1" == "mac" ]; then
+    mv ~/.bash_profile ~/.bash_profile.bkp
     cat .bash_cfg_partial >> ~/.bash_profile
     bash mac.sh
 elif [ "$1" == "linux" ]; then
+    mv ~/.bashrc ~/.bashrc.bkp
     cat .bash_cfg_partial >> ~/.bashrc
     bash linux.sh
 else
