@@ -6,6 +6,9 @@ alias lad="ls -lA | grep '^d'"
 alias laf="ls -lA | grep '^-'"
 alias lal="ls -lA | grep '^l'"
 alias c="clear && printf '\e[3J'"
+alias rd="rm -r"
+alias rmf="rm -f"
+alias rdf="rd -rf"
 
 # cd shortcuts
 alias cd1="cd .."
@@ -21,3 +24,6 @@ alias bl="vi ~/bucket_list.txt"
 alias sbp="source ~/.bash_profile"
 alias edbp="vi ~/.bash_profile"
 
+# App Shortcuts
+alias v="vim"
+alias g="git"
