@@ -47,13 +47,14 @@ syntax on
 set splitbelow
 set splitright
 
-" Make it obvious where 80 characters is
-set textwidth=120
-" set colorcolumn=+1
+" Hard wrapping text beyond 120 characters 
+" set textwidth=120
 
 " Show the cursor line highlighted all the time
 set cursorline
 highlight CursorLine cterm=None ctermbg=darkblue ctermfg=white
 
 set rtp+=~/.fzf
-
+call plug#begin()
+Plug 'itchyny/lightline.vim'
+call plug#end()
