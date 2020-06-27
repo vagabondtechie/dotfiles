@@ -2,6 +2,16 @@
 set nocompatible
 set backspace=eol,start,indent
 
+" Setting Leader Key and key remaps
+let mapleader=" "
+nnoremap <Leader>s :w<CR>
+nnoremap <Leader>x :x<CR>
+nnoremap <Leader>q :q!<CR>
+nnoremap <Leader>f :FZF<CR>
+nnoremap <Leader>h :sp<CR>
+nnoremap <Leader>v :vs<CR>
+nnoremap <Leader>o :set number! relativenumber!<CR>
+
 " No backup files
 set nobackup
 set nowb
@@ -14,25 +24,17 @@ set shiftwidth=4
 set expandtab
 
 set relativenumber
+set number
 set autoindent
 
 " Status line related configs
 set laststatus=2
-set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)
 
 " Search related config
 set ignorecase
 set smartcase
 set hlsearch
 set incsearch
-
-" Setting Leader Key and key remaps
-let mapleader=" "
-nnoremap <Leader>s :w<CR>
-nnoremap <Leader>x :x<CR>
-nnoremap <Leader>q :q!<CR>
-nnoremap <Leader>f :FZF<CR>
-nnoremap <Leader>o :edit 
 
 " Setting the arrow keys to move around windows in a split-window environment
 nnoremap <Left> <C-w><Left>
