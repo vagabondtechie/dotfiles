@@ -11,7 +11,7 @@ export EDITOR=vim
 HISTFILESIZE=100000
 HISTSIZE=100000
 PROMPT_COMMAND='history -a'
-HISTCONTROL=ignoredups
+HISTCONTROL=ignorespace:erasedups
 
 shopt -s histappend
 shopt -s cmdhist
