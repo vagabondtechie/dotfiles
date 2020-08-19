@@ -59,4 +59,5 @@ highlight CursorLine cterm=None ctermbg=darkblue ctermfg=white
 set rtp+=~/.fzf
 call plug#begin()
 Plug 'itchyny/lightline.vim'
+Plug 'tpope/vim-fugitive'
 call plug#end()

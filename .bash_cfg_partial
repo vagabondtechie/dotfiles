@@ -4,6 +4,9 @@
 [ -f ~/.env_vars ] && source ~/.env_vars
 [ -f ~/.path_vars ] && source ~/.path_vars
 
+# Setup editor
+export EDITOR=vim
+
 # Shell options related to accessiblity and history
 HISTFILESIZE=100000
 HISTSIZE=100000

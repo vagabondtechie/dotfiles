@@ -12,13 +12,13 @@ ln -s $(pwd)/.vimrc $HOME/
 [ -f ~/quick_notes.txt ] || cp quick_notes.txt ~/
 [ -f ~/bucket_list.txt ] || cp bucket_list.txt ~/
 
+mv ~/.bash_profile ~/.bash_profile.bkp
+mv ~/.bashrc ~/.bashrc.bkp
+cat .bash_cfg_partial >> ~/.profile
+
 if [ "$1" == "mac" ]; then
-    mv ~/.bash_profile ~/.bash_profile.bkp
-    cat .bash_cfg_partial >> ~/.bash_profile
     bash mac.sh
 elif [ "$1" == "linux" ]; then
-    mv ~/.bashrc ~/.bashrc.bkp
-    cat .bash_cfg_partial >> ~/.bashrc
     bash linux.sh
 else
     echo "Which os is this?"

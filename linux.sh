@@ -15,3 +15,8 @@ echo 'eval "$(starship init bash)"' >> ~/.bashrc
 
 # Install vim-plug for installing vim plugins
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+# Install xclip and make it equivalent to pbcopy/pbpaste
+sudo apt-get install -y xclip
+echo "alias pbcopy='xclip -selection clipboard'" >> ~/.bash_aliases
+echo "alias pbpaste='xclip -selection clipboard -o'" >> ~/.bash_aliases
