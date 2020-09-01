@@ -4,6 +4,7 @@ ln -s $(pwd)/.bash_aliases $HOME/
 ln -s $(pwd)/.bash_functions $HOME/
 ln -s $(pwd)/.git_aliases $HOME/
 ln -s $(pwd)/.vimrc $HOME/
+ln -s $(pwd)/.tmux.conf $HOME/
 [ -f ~/.path_vars ] || cp .path_vars ~/
 [ -f ~/.env_vars ] || cp .env_vars ~/
 
