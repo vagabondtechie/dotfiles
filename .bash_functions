@@ -2,6 +2,9 @@
 function mkcd() {
 	mkdir -p "$@" && cd "$_";
 }
-function cb() {
-    cat "$1" | pbcopy;
+function ecb() {
+    echo "$@" | pbcopy;
+}
+function ccb() {
+    cat "$@" | pbcopy;
 }

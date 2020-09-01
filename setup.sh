@@ -7,11 +7,6 @@ ln -s $(pwd)/.vimrc $HOME/
 [ -f ~/.path_vars ] || cp .path_vars ~/
 [ -f ~/.env_vars ] || cp .env_vars ~/
 
-# Copy note taking files
-[ -f ~/todos.txt ] || cp todos.txt ~/
-[ -f ~/quick_notes.txt ] || cp quick_notes.txt ~/
-[ -f ~/bucket_list.txt ] || cp bucket_list.txt ~/
-
 mv ~/.bash_profile ~/.bash_profile.bkp
 mv ~/.bashrc ~/.bashrc.bkp
 cat .bash_cfg_partial >> ~/.profile

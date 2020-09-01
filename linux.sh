@@ -11,7 +11,7 @@ sudo apt-get install libreoffice vlc firefox
 
 # Install starship bash prompt
 curl -fsSL https://starship.rs/install.sh | bash
-echo 'eval "$(starship init bash)"' >> ~/.bashrc
+echo 'eval "$(starship init bash)"' >> ~/.profile
 
 # Install vim-plug for installing vim plugins
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim

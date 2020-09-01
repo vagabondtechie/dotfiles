@@ -6,7 +6,7 @@ sudo xcode-select --install
 
 # Install starship bash prompt
 brew install starship
-echo 'eval "$(starship init bash)"' >> ~/.bash_profile
+echo 'eval "$(starship init bash)"' >> ~/.profile
 
 # Install ctags
 brew install ctags
