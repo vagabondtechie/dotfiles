@@ -1,8 +1,8 @@
 #!/bin/bash
 # Link the config files to HOME directory counterparts
-ln -s $(pwd)/.bash_aliases $HOME/
-ln -s $(pwd)/.bash_functions $HOME/
-ln -s $(pwd)/.git_aliases $HOME/
+ln -s $(pwd)/.aliases $HOME/
+ln -s $(pwd)/.functions $HOME/
+ln -s $(pwd)/.aliases_git $HOME/
 ln -s $(pwd)/.vimrc $HOME/
 ln -s $(pwd)/.tmux.conf $HOME/
 [ -f ~/.path_vars ] || cp .path_vars ~/
@@ -10,7 +10,7 @@ ln -s $(pwd)/.tmux.conf $HOME/
 
 mv ~/.bash_profile ~/.bash_profile.bkp
 mv ~/.bashrc ~/.bashrc.bkp
-cat .bash_cfg_partial >> ~/.profile
+cat .profile >> ~/.profile
 
 if [ "$1" == "mac" ]; then
     bash mac.sh

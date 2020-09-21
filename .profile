@@ -1,6 +1,6 @@
-[ -f ~/.bash_aliases ] && source ~/.bash_aliases
-[ -f ~/.bash_functions ] && source ~/.bash_functions
-[ -f ~/.git_aliases ] && source ~/.git_aliases
+[ -f ~/.aliases ] && source ~/.aliases
+[ -f ~/.functions ] && source ~/.functions
+[ -f ~/.aliases_git ] && source ~/.aliases_git
 [ -f ~/.env_vars ] && source ~/.env_vars
 [ -f ~/.path_vars ] && source ~/.path_vars
 

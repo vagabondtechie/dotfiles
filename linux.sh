@@ -1,13 +1,10 @@
 #/bin/bash
 
 # Development software
-sudo apt-get install python3-pip python-pip virtualenv git openssh-server openssh-client g++ gcc exuberant-ctags
+sudo apt-get install python3-pip git openssh-server openssh-client exuberant-ctags
 
 # Archives and restricted extras
 sudo apt-get install unace rar unrar p7zip-rar p7zip sharutils uudeview mpack arj cabextract lzip lunzip gdebi
-
-# General purpose software
-sudo apt-get install libreoffice vlc firefox
 
 # Install starship bash prompt
 curl -fsSL https://starship.rs/install.sh | bash
@@ -18,5 +15,5 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 
 # Install xclip and make it equivalent to pbcopy/pbpaste
 sudo apt-get install -y xclip
-echo "alias pbcopy='xclip -selection clipboard'" >> ~/.bash_aliases
-echo "alias pbpaste='xclip -selection clipboard -o'" >> ~/.bash_aliases
+echo "alias pbcopy='xclip -selection clipboard'" >> ~/.aliases
+echo "alias pbpaste='xclip -selection clipboard -o'" >> ~/.aliases

@@ -60,4 +60,5 @@ set rtp+=~/.fzf
 call plug#begin()
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
