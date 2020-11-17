@@ -44,7 +44,7 @@ alias gcp="git cherry-pick"
 alias gcpc="git cherry-pick --continue"
 alias gcpa="git cherry-pick --abort"
 
-alias gco="git checkout"
+alias gco="git checkout \$(git branch | fzf)"
 alias gcob="git checkout -b"
 alias gcom="git checkout master"
 alias gcol="git checkout -"

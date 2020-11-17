@@ -7,7 +7,7 @@ let mapleader=" "
 nnoremap <Leader>s :w<CR>
 nnoremap <Leader>x :x<CR>
 nnoremap <Leader>q :q!<CR>
-nnoremap <Leader>f :FZF<CR>
+nnoremap <Leader>f :Files<CR>
 nnoremap <Leader>h :sp<CR>
 nnoremap <Leader>v :vs<CR>
 nnoremap <Leader>o :set number! relativenumber!<CR>
@@ -36,12 +36,6 @@ set smartcase
 set hlsearch
 set incsearch
 
-" Setting the arrow keys to move around windows in a split-window environment
-nnoremap <Left> <C-w><Left>
-nnoremap <Right> <C-w><Right>
-nnoremap <Up> <C-w><Up>
-nnoremap <Down> <C-w><Down>
-
 " Syntax and color
 syntax on
 
@@ -49,16 +43,20 @@ syntax on
 set splitbelow
 set splitright
 
-" Hard wrapping text beyond 120 characters 
-" set textwidth=120
-
 " Show the cursor line highlighted all the time
 set cursorline
-highlight CursorLine cterm=None ctermbg=darkblue ctermfg=white
 
 set rtp+=~/.fzf
 call plug#begin()
-Plug 'itchyny/lightline.vim'
+Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
+Plug 'morhetz/gruvbox'
+Plug 'vim-airline/vim-airline'
 call plug#end()
+
+let g:fzf_layout = { 'window': '10new' } 
+let $FZF_DEFAULT_OPTS='--reverse'
+let $FZF_DEFAULT_COMMAND='find .'
+colorscheme gruvbox
+set background=dark
