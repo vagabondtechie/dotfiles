@@ -17,3 +17,4 @@ shopt -s histappend
 shopt -s cmdhist
 shopt -s cdspell
 
+export PS1="[\[\e[35m\] \w \[\e[m\]]\[\e[36m\]\`git_info\`\[\e[m\]$ "

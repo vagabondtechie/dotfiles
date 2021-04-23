@@ -12,4 +12,4 @@ brew install wget
 brew install bash-completion
 wget -O ~/.git_completion.bash https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
 echo "[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion" >> ~/.profile
-echo ". ~/.git-completion.bash" >> ~/.profile
+echo ". ~/.git_completion.bash" >> ~/.profile

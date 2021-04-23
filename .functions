@@ -1,18 +1,11 @@
-git_info() {
-   git status 2> /dev/null | awk '
-   BEGIN {
-     modified=0; added=0; branch=""
-   }
-   /On branch/ { branch = $3; }
-   /Changes to be committed/ { added=1 }
-   /Changes not staged for commit/ { modified = 1 }
-   END {
-     if (added) printf "on \033[1;93m%s [+]", branch
-     else if (modified) printf "on \033[1;91m%s [✘]", branch
-     else if (branch != "") printf "on \033[1;92m%s [✔]", branch
-     else printf ""
-   }
-   '
+function git_info() {
+	BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
+	if [ ! "${BRANCH}" == "" ]
+	then
+		echo " [${BRANCH}] "
+	else
+		echo " "
+	fi
 }
 # Create a new directory and enter it
 function mkcd() {
