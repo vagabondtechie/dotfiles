@@ -9,8 +9,11 @@ function git_info() {
 }
 # Create a new directory and enter it
 function mkcd() {
+    # Make a directory and cd into it
 	mkdir -p "$@" && cd "$_";
 }
 function e() {
+    # If file name is the argument, then copy its contents to clipboard
+    # If text is given, then copy the entire text to clipboard
     [ -f "$@" ] && cat "$@" | pbcopy || echo "$@" | pbcopy
 }
