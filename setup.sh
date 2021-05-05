@@ -8,8 +8,8 @@ ln -s $(pwd)/.tmux.conf $HOME/
 [ -f ~/.path_vars ] || cp .path_vars ~/
 [ -f ~/.env_vars ] || cp .env_vars ~/
 
-mv ~/.bash_profile ~/.bash_profile.bkp
-mv ~/.bashrc ~/.bashrc.bkp
+[ -f ~/.bash_profile ] && mv ~/.bash_profile ~/.bash_profile.bkp
+[ -f ~/.bashrc ] &&  mv ~/.bashrc ~/.bashrc.bkp
 cat .profile >> ~/.profile
 
 if [ "$1" == "mac" ]; then
