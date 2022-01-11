@@ -10,6 +10,6 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 # Some bash and git completion
 brew install wget
 brew install bash-completion
-wget -O ~/.git_completion.bash https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
+wget -O ~/.git_completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 echo "[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion" >> ~/.profile
 echo ". ~/.git_completion.bash" >> ~/.profile

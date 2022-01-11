@@ -17,5 +17,5 @@ echo "alias pbpaste='xclip -selection clipboard -o'" >> ~/.aliases
 # Some bash and git completion
 sudo apt-get install bash-completion
 echo "source /etc/profile.d/bash_completion.sh" >> ~/.profile
-wget -O ~/.git_completion.bash https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
+wget -O ~/.git_completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 echo ". ~/.git_completion.bash" >> ~/.profile
