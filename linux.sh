@@ -6,6 +6,9 @@ sudo apt-get install python3-pip git openssh-server openssh-client exuberant-cta
 # Archives and restricted extras
 sudo apt-get install unace rar unrar p7zip-rar p7zip sharutils uudeview mpack arj cabextract lzip lunzip gdebi
 
+# Install some vim related packages
+sudo apt-get install vim-gui-common vim-runtime
+
 # Install vim-plug for installing vim plugins
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 

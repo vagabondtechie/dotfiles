@@ -4,6 +4,9 @@
 sudo xcode-select --install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
+# Install some vim related packages
+sudo apt-get install vim-gui-common vim-runtime
+
 # Install vim-plug for installing vim plugins
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
